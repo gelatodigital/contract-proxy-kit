@@ -105,8 +105,8 @@ const defaultNetworks = {
   },
   // rinkeby
   4: {
-    masterCopyAddress: '0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F',
-    proxyFactoryAddress: '0x336c19296d3989e9e0c2561ef21c964068657c38',
+    masterCopyAddress: '0x6851D6fDFAfD08c0295C392436245E5bc78B0185',
+    proxyFactoryAddress: '0x1f4Ab3778e3FeB06A3D4702B31CE56a561080986',
     multiSendAddress: '0xB522a9f781924eD250A11C54105E51840B138AdD',
     fallbackHandlerAddress: '0x40A930851BD2e590Bd5A5C981b436de25742E980',
   },
