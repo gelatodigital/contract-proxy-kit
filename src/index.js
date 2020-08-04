@@ -20,8 +20,8 @@ const safeAbi = [
     type: 'function',
     name: 'execTransaction',
     constant: false,
-    payable: false,
-    stateMutability: 'nonpayable',
+    payable: true,
+    stateMutability: 'payable',
     inputs: [
       { type: 'address', name: 'to' },
       { type: 'uint256', name: 'value' },
@@ -64,8 +64,8 @@ const cpkFactoryAbi = [
     type: 'function',
     name: 'createProxyAndExecTransaction',
     constant: false,
-    payable: false,
-    stateMutability: 'nonpayable',
+    payable: true,
+    stateMutability: 'payable',
     inputs: [
       { type: 'address', name: 'masterCopy' },
       { type: 'uint256', name: 'saltNonce' },
@@ -397,7 +397,7 @@ const CPK = class CPK {
       });
 
       attemptTransaction = async (contract, viewContract, methodName, params, err) => {
-        if (!(await viewContract.functions[methodName](...params))) throw err;
+        //if (!(await viewContract.functions[methodName](...params))) throw err;
         const transactionResponse = await contract.functions[methodName](
           ...params,
           ...(options == null ? [] : [options]),
