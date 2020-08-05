@@ -98,9 +98,9 @@ const multiSendAbi = [
 const defaultNetworks = {
   // mainnet
   1: {
-    masterCopyAddress: '0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F',
-    proxyFactoryAddress: '0x0fB4340432e56c014fa96286de17222822a9281b',
-    multiSendAddress: '0xB522a9f781924eD250A11C54105E51840B138AdD',
+    masterCopyAddress: '0x6851D6fDFAfD08c0295C392436245E5bc78B0185',
+    proxyFactoryAddress: '0x1eDa606967A97522B432D39D19a2bf4dAF2229De',
+    multiSendAddress: '0xd740dB15E7DD01753f4a1Db14226b520C7E6C859',
     fallbackHandlerAddress: '0x40A930851BD2e590Bd5A5C981b436de25742E980',
   },
   // rinkeby
